@@ -92,3 +92,13 @@ nav[3].style.color = `green`;
 nav[4].style.color = `green`;
 nav[5].style.color = `green`;
 
+let item1 = document.createElement("a");
+item1.textContent = "Item1";
+item1.id = "item1";
+
+let item2 = document.createElement("a");
+item2.textContent = "Item2";
+item2.id = "item2";
+
+document.querySelector("header nav").prepend(item1);
+document.querySelector("header nav").append(item2);
