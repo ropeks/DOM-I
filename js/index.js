@@ -83,3 +83,12 @@ p[5].textContent = siteContent["contact"].address
 p[6].textContent = siteContent["contact"].phone
 p[7].textContent = siteContent["contact"].email
 p[8].textContent = siteContent["footer"].copyright
+
+// task 3
+nav[0].style.color = `green`;
+nav[1].style.color = `green`;
+nav[2].style.color = `green`;
+nav[3].style.color = `green`;
+nav[4].style.color = `green`;
+nav[5].style.color = `green`;
+
