@@ -40,3 +40,65 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+// images
+let codeImg = document.getElementById("cta-img");
+codeImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+let midImg = document.getElementById("middle-img");
+midImg.src = siteContent["main-content"]["middle-img-src"];
+
+// nav
+let nav = document.querySelectorAll("nav a");
+nav[0].textContent = siteContent.nav["nav-item-1"]
+nav[1].textContent = siteContent.nav["nav-item-2"]
+nav[2].textContent = siteContent.nav["nav-item-3"]
+nav[3].textContent = siteContent.nav["nav-item-4"]
+nav[4].textContent = siteContent.nav["nav-item-5"]
+nav[5].textContent = siteContent.nav["nav-item-6"]
+
+// head
+let h1 = document.querySelector("h1");
+h1.textContent = siteContent.cta["h1"]
+
+let button = document.querySelector("button");
+button.textContent = siteContent.cta["button"]
+
+// main, bottom and footer
+let h4 = document.querySelectorAll("h4");
+h4[0].textContent = siteContent["main-content"]["features-h4"]
+h4[1].textContent = siteContent["main-content"]["about-h4"]
+h4[2].textContent = siteContent["main-content"]["services-h4"]
+h4[3].textContent = siteContent["main-content"]["product-h4"]
+h4[4].textContent = siteContent["main-content"]["vision-h4"]
+h4[5].textContent = siteContent["contact"]["contact-h4"]
+
+let p = document.querySelectorAll("p");
+p[0].textContent = siteContent["main-content"]["features-content"]
+p[1].textContent = siteContent["main-content"]["about-content"]
+p[2].textContent = siteContent["main-content"]["services-content"]
+p[3].textContent = siteContent["main-content"]["product-content"]
+p[4].textContent = siteContent["main-content"]["vision-content"]
+p[5].textContent = siteContent["contact"].address
+p[6].textContent = siteContent["contact"].phone
+p[7].textContent = siteContent["contact"].email
+p[8].textContent = siteContent["footer"].copyright
+
+// task 3
+nav[0].style.color = `green`;
+nav[1].style.color = `green`;
+nav[2].style.color = `green`;
+nav[3].style.color = `green`;
+nav[4].style.color = `green`;
+nav[5].style.color = `green`;
+
+let item1 = document.createElement("a");
+item1.textContent = "Item1";
+item1.id = "item1";
+
+let item2 = document.createElement("a");
+item2.textContent = "Item2";
+item2.id = "item2";
+
+document.querySelector("header nav").prepend(item1);
+document.querySelector("header nav").append(item2);
